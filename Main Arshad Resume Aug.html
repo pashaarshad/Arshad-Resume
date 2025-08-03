@@ -276,8 +276,9 @@
 </head>
 <body>
     <!-- Download Button -->
-    <button class="download-btn" onclick="downloadResume()" title="Download Resume as PDF">
-        📄 Download Resume
+    <button class="download-btn" onclick="downloadResume()" title="Download Resume as PDF" aria-label="Download Resume as PDF">
+        <span aria-hidden="true" style="margin-right: 6px;">📄</span>
+        <span>Download Resume</span>
     </button>
 
     <!-- Hidden ATS Keywords -->
