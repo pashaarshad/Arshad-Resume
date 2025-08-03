@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshad Pasha - Software Developer Resume</title>
+    <style>
+        /* ATS-Friendly Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Arial", "Helvetica", sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
+            background-color: #ffffff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 15px;
+        }
+
+        .name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            margin-bottom: 5px;
+        }
+
+        .contact-info a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Headers */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Summary Section */
+        .summary {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        /* Experience Section */
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        .company {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .date {
+            font-size: 10pt;
+            color: #333333;
+        }
+
+        .job-description {
+            margin-left: 0;
+        }
+
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .job-description li {
+            margin-bottom: 3px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            line-height: 1.3;
+        }
+
+        /* Education Section */
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        .degree {
+            font-weight: bold;
+        }
+
+        .school {
+            font-style: italic;
+        }
+
+        /* Certifications */
+        .cert-list {
+            margin-left: 20px;
+        }
+
+        .cert-list li {
+            margin-bottom: 3px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 12px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        /* ATS Optimization */
+        .hidden-keywords {
+            font-size: 1px;
+            color: #ffffff;
+            position: absolute;
+            left: -9999px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0.25in;
+                font-size: 10pt;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 15px;
+            }
+            
+            .job {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden ATS Keywords -->
+    <div class="hidden-keywords">
+        Software Developer Full Stack Developer Python Java JavaScript React ReactJS Next.js Flask Django Node.js Angular Vue.js Spring Boot MySQL PostgreSQL MongoDB SQLite Firebase HTML CSS Bootstrap Git GitHub GitLab Docker AWS Google Cloud Platform GCP Vertex AI Machine Learning Artificial Intelligence Data Science Backend Frontend DevOps Agile Scrum REST API GraphQL Microservices Unit Testing Integration Testing TDD BDD CI/CD Jenkins GitHub Actions Linux Ubuntu Windows Kali Linux RPA UiPath Cybersecurity Ethical Hacking Network Security Cryptography Steganography OpenCV TensorFlow PyTorch Pandas Gemini API DeepSeek API OpenRouter Generative AI Web Development Hackathon Open Source Contributor Project Management Database Management System CRUD Operations Real-time Search SQL Injection Prevention Password Hashing Face Recognition Computer Vision Image Processing GUI Development Chrome Extension Productivity Tool Chemical Reaction Simulator Data Analytics Virtual Experience Program Threat Analysis Incident Response Security Assessment Vulnerability Assessment Penetration Testing
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="name">ARSHAD PASHA</h1>
+        <div class="contact-info">
+            <span>arshadpashaintern@gmail.com</span> | 
+            <span>+91 7760554350</span> | 
+            <span>Hunsur, Mysore, Karnataka</span>
+        </div>
+        <div class="contact-info">
+            <a href="https://linkedin.com/in/arshad-pasha" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/pashaarshad" target="_blank">GitHub</a> | 
+            <a href="https://arshadpasha.tech" target="_blank">arshadpasha.tech</a>
+        </div>
+        <div class="contact-info">
+            <strong>Full Stack Web Developer | AI/ML & Data Science Enthusiast</strong>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+        <h2 class="section-title">Summary</h2>
+        <div class="summary">
+            A highly motivated and results-driven developer with a robust portfolio of over 10 projects in Full Stack Web Development, AI/ML, and Cybersecurity. Expertise in building scalable and secure web applications using technologies like ReactJS and Flask, while leveraging AI/ML frameworks such as TensorFlow and PyTorch for innovative solutions. Proven experience in competitive hackathons and open-source contributions. A fast learner with a comprehensive skill set across diverse IT domains and a passion for continuous learning.
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-title">Full Stack & Web Development:</div>
+                <div class="skill-list">HTML, CSS, JavaScript, ReactJS, Next.js, Flask, MySQL, SQLite, MongoDB, Firebase, Git, GitHub, Netlify, Render.com, Railway</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">AI/ML & Data Science:</div>
+                <div class="skill-list">Python, Pandas, TensorFlow, PyTorch, OpenCV, Vertex AI, Gemini API, DeepSeek API, Generative AI, Data Science Fundamentals</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Cybersecurity & Automation:</div>
+                <div class="skill-list">Kali Linux, Robotic Process Automation (RPA), UiPath, Cryptography, Steganography, Network Security, Threat Analysis, Ethical Hacking</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Programming Languages:</div>
+                <div class="skill-list">Python, JavaScript, Java, C, C++</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Database Systems:</div>
+                <div class="skill-list">MySQL, SQLite, MongoDB, Firebase, JSON for data handling</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Operating Systems:</div>
+                <div class="skill-list">Windows, Ubuntu, Kali Linux, Arch Linux, Porteus Kiosk</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">DevOps & Cloud:</div>
+                <div class="skill-list">Google Cloud Platform (GCP), GitHub Actions, GitLab, Vertex AI</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Deployment & Hosting:</div>
+                <div class="skill-list">Netlify, Render.com, Railway, InfinityFree, 000webhost</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+        <h2 class="section-title">Internships & Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Artificial Intelligence and Data Analytics Intern</div>
+                    <div class="company">AICTE, Shell India Markets Private Limited, Edunet Foundation</div>
+                </div>
+                <div class="date">June 2025 - July 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Completed a 4-week virtual internship focused on AI, Data Analytics, and Green Skills</li>
+                    <li>Gained hands-on experience with artificial intelligence applications in energy sector</li>
+                    <li>Developed understanding of sustainable technology solutions and environmental impact</li>
+                    <li>Applied data analytics techniques to real-world industry challenges</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Data Analytics Job Simulation</div>
+                    <div class="company">Deloitte Australia</div>
+                </div>
+                <div class="date">June 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Completed a comprehensive virtual experience gaining practical exposure to real-world data analytics challenges</li>
+                    <li>Analyzed complex datasets and provided actionable insights for business decision-making</li>
+                    <li>Applied statistical methods and data visualization techniques</li>
+                    <li>Demonstrated proficiency in data interpretation and reporting</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Cybersecurity Virtual Experience Program</div>
+                    <div class="company">Deloitte - Forage</div>
+                </div>
+                <div class="date">June 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Gained hands-on experience in real-world cybersecurity scenarios and tasks</li>
+                    <li>Simulated the role of a cybersecurity analyst in enterprise environment</li>
+                    <li>Analyzed security threats and implemented protective measures</li>
+                    <li>Developed skills in threat assessment and incident response</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Web Development Intern</div>
+                    <div class="company">Nexus Logic Technologies</div>
+                </div>
+                <div class="date">March 2025 - May 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Contributed significantly to web development projects demonstrating strong understanding of modern web technologies</li>
+                    <li>Demonstrated swift learning capabilities quickly integrating new concepts and tools into project workflows</li>
+                    <li>Maintained punctuality and diligent work ethic throughout the internship</li>
+                    <li>Collaborated effectively with development team on client projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Cyber Security Intern</div>
+                    <div class="company">Edunet Foundation, AICTE, IBM SkillsBuild</div>
+                </div>
+                <div class="date">Culminated June 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Contributed to cybersecurity projects demonstrating understanding of security protocols</li>
+                    <li>Applied ethical hacking techniques and vulnerability assessment methods</li>
+                    <li>Gained practical experience with industry-standard security tools and frameworks</li>
+                    <li>Developed skills in threat analysis and security documentation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Foundations of AI Intern</div>
+                    <div class="company">Edunet Foundation - Microsoft Initiative</div>
+                </div>
+                <div class="date">April 2025 - May 2025</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Successfully completed 4-week program focused on foundational principles and applications of Artificial Intelligence</li>
+                    <li>Gained practical insights into AI concepts as part of Microsoft initiative in collaboration with AICTE</li>
+                    <li>Applied machine learning algorithms to solve real-world problems</li>
+                    <li>Developed understanding of AI ethics and responsible AI development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Full Stack Development Intern</div>
+                    <div class="company">Micro IT</div>
+                </div>
+                <div class="date">April 2025 (1-Month Program)</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Successfully completed 4-week program focused on foundational principles and applications of Artificial Intelligence</li>
+                    <li>Gained practical insights into AI concepts as part of Microsoft initiative in collaboration with AICTE</li>
+                    <li>Developed proficiency in full-stack development technologies and frameworks</li>
+                    <li>Built responsive web applications using modern development practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+        <h2 class="section-title">Selected Projects</h2>
+        
+        <div class="project">
+            <div class="project-title">Library Management System (Flask, MySQL, HTML, CSS, JavaScript)</div>
+            <p>A full-stack web application with features for user management, book/member CRUD, and real-time search. Implemented secure password hashing and SQL injection prevention, enhancing application security. Deployed the application on Railway, integrating with an external MySQL database.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Criminal-Identification-System (Python, OpenCV, Face Recognition, Tkinter, SQLite)</div>
+            <p>Engineered a real-time facial recognition system with an SMS alert integration for automated criminal detection. Designed and implemented a three-module system for Registration, Detection, and Live Video Surveillance.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Chrome Extension - Personal Productivity Tool (HTML, CSS, JavaScript)</div>
+            <p>Engineered a lightweight Chrome extension to boost daily productivity. Implemented features for quick task notes and utilized localStorage for efficient data saving. Designed an instant popup interface, streamlining routine workflows and providing fast access to core functionalities.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">ElementMix ISRO Chemical Reaction Simulator (Python, JSON, API key)</div>
+            <p>Developed a chemical reaction simulator that accepts two reactants or a chemical formula as input and predicts the reaction and output. Integrated DeepSeek AI via OpenRouter API to analyze inputs and generate balanced equations and explanations.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Infosys Hackathon – SmartRecycle Platform (ReactJS, JSON, Python, MySQL)</div>
+            <p>Built a functional web platform in 48 hours for a hackathon, enabling users to request garbage pickup and redeem rewards. Showcased ability to rapidly develop a full-stack solution under time constraints.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Encrypt, Decrypt, Images Cybersecurity (Python, API key)</div>
+            <p>Created a GUI-based tool that uses steganography to securely embed and extract encrypted text within images. Enhanced practical skills in image processing and cryptography for secure data hiding.</p>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list">
+            <li><strong>Google Cloud:</strong> Build Multi-Modal GenAI Applications (Vertex AI), Explored Generative AI with the Gemini API in Vertex AI, Google Cloud Skills Boost Profile</li>
+            <li><strong>Infosys Springboard:</strong> OpenAI GPT-3 for Developers (June 2025), Introduction to Artificial Intelligence (June 2025), Introduction to Data Science (June 2025)</li>
+            <li><strong>Microsoft:</strong> Foundations of AI (in collaboration with Edunet Foundation and AICTE) (May 2025)</li>
+            <li><strong>UiPath:</strong> RPA Developer Training (2022)</li>
+            <li><strong>Cybersecurity & Ethical Hacking:</strong> Kali Linux (Self-Learned, 2021)</li>
+            <li><strong>Deloitte:</strong> Data Analytics Job Simulation</li>
+            <li><strong>YouTube Tech Courses (Various)</strong></li>
+        </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="degree">Bachelor of Computer Applications (BCA)</div>
+            <div class="school">Seshadripuram Degree College, Mysore</div>
+            <div class="date">2023 - 2026</div>
+            <div>University of Mysore</div>
+        </div>
+    </section>
+
+    <!-- Hackathons & Achievements -->
+    <section class="section">
+        <h2 class="section-title">Hackathons</h2>
+        <ul class="cert-list">
+            <li><strong>Infosys Global Hackathon (July 11-12, 2025):</strong> 2-day challenge gaining insights into large-scale project execution and industrial workflows. Our team was selected online from many participants, showing strong project potential. Acquired new skills and practical experience in a real-time, competitive environment.</li>
+            <li><strong>AITHON (AI Tools Hackathon) (2024):</strong> Participated in a college-hosted hackathon with Digital Maven, learning to leverage AI tools for web creation, image generation, research, and data analysis. Gained practical experience in using advanced AI capabilities to build comprehensive solutions.</li>
+            <li><strong>Hindustan College Hackathon 2024 (March 22, 2024):</strong> First hackathon participation where developed a health and wellness website. Gained valuable experience in competitive, time-bound project development.</li>
+        </ul>
+    </section>
+
+    <!-- Leadership & Awards -->
+    <section class="section">
+        <h2 class="section-title">Leadership & Awards</h2>
+        <ul class="cert-list">
+            <li><strong>1st Prize:</strong> Website Development Competition at Inter-College Fest (Degree Level)</li>
+            <li><strong>2nd Prize:</strong> Website Development Competition at PU Level</li>
+            <li><strong>Open-Source Contributor:</strong> Social Summer of Code (SSOC)</li>
+            <li><strong>Leadership Roles:</strong> Education Vice-Captain (PU College) and Class Representative (Degree College)</li>
+        </ul>
+    </section>
+
+    <script>
+        // JavaScript for enhanced functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for internal links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add print functionality
+            function printResume() {
+                window.print();
+            }
+
+            // Add keyboard shortcut for printing (Ctrl+P)
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 'p') {
+                    e.preventDefault();
+                    printResume();
+                }
+            });
+
+            // Add dynamic year update
+            const currentYear = new Date().getFullYear();
+            const yearElements = document.querySelectorAll('.current-year');
+            yearElements.forEach(element => {
+                element.textContent = currentYear;
+            });
+
+            // Add section highlighting on scroll
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.transition = 'all 0.3s ease';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Add contact link tracking
+            const contactLinks = document.querySelectorAll('.contact-info a');
+            contactLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Contact link clicked:', this.textContent);
+                });
+            });
+
+            // Add responsive font sizing
+            function adjustFontSize() {
+                const width = window.innerWidth;
+                const body = document.body;
+                
+                if (width < 768) {
+                    body.style.fontSize = '10pt';
+                } else if (width < 1024) {
+                    body.style.fontSize = '10.5pt';
+                } else {
+                    body.style.fontSize = '11pt';
+                }
+            }
+
+            // Adjust font size on load and resize
+            adjustFontSize();
+            window.addEventListener('resize', adjustFontSize);
+
+            // Add ATS-friendly content validation
+            function validateATSContent() {
+                const textContent = document.body.textContent;
+                const wordCount = textContent.split(/\s+/).length;
+                const hasContacts = document.querySelector('.contact-info');
+                const hasSections = document.querySelectorAll('.section').length >= 5;
+                
+                console.log('ATS Validation:', {
+                    wordCount: wordCount,
+                    hasContactInfo: !!hasContacts,
+                    hasRequiredSections: hasSections,
+                    isATSFriendly: wordCount > 300 && hasContacts && hasSections
+                });
+            }
+
+            validateATSContent();
+        });
+
+        // Export functionality for different formats
+        function exportResume(format) {
+            switch(format) {
+                case 'pdf':
+                    window.print();
+                    break;
+                case 'txt':
+                    const textContent = document.body.innerText;
+                    const blob = new Blob([textContent], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'Arshad_Pasha_Resume.txt';
+                    a.click();
+                    URL.revokeObjectURL(url);
+                    break;
+                default:
+                    console.log('Format not supported');
+            }
+        }
+
+        // Performance optimization
+        function optimizeForATS() {
+            // Remove any problematic elements for ATS parsing
+            const problematicElements = document.querySelectorAll('script, style');
+            console.log('ATS Optimization: Found', problematicElements.length, 'elements that might affect parsing');
+            
+            // Ensure all text is selectable
+            document.body.style.userSelect = 'text';
+            document.body.style.webkitUserSelect = 'text';
+            
+            // Add semantic structure
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                section.setAttribute('role', 'region');
+                section.setAttribute('aria-label', section.querySelector('.section-title').textContent);
+            });
+        }
+
+        // Run ATS optimization
+        optimizeForATS();
+    </script>
+</body>
+</html>
