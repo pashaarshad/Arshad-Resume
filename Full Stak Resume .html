@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshad Pasha - Full Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .resume-container {
+            max-width: 900px;
+            background-color: white;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .header p {
+            font-size: 1.125rem;
+            color: #4b5563;
+        }
+        .contact-info a, .contact-info span {
+            color: #6b7280;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info svg {
+            margin-right: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            color: #3b82f6;
+        }
+        .section {
+            margin-top: 2rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .list-item {
+            margin-bottom: 1rem;
+        }
+        .job-title, .project-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        .company-name, .project-tech {
+            font-weight: 500;
+            color: #4b5563;
+        }
+        .dates {
+            font-style: italic;
+            color: #6b7280;
+        }
+        .description-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            color: #4b5563;
+        }
+        .skill-group {
+            margin-bottom: 1rem;
+        }
+        .skill-group h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background-color: #e5e7eb;
+            color: #374151;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        @media (max-width: 640px) {
+            .resume-container {
+                padding: 1.5rem;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <div class="flex justify-end max-w-4xl mx-auto my-4">
+             <button id="download-button" class="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+                Download Resume
+            </button>
+        </div>
+        <div class="resume-container" id="resume-content">
+            <!-- Header Section -->
+            <div class="header pb-4 border-b-2 border-gray-200">
+                <div>
+                    <h1 class="font-extrabold tracking-tight">ARSHAD PASHA</h1>
+                    <p class="font-medium text-blue-600 mt-1">Full Stack Web Developer</p>
+                </div>
+                <div class="contact-info mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                    <a href="mailto:arshadpashaintern@gmail.com" class="hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 11l7.997-5.116A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg> arshadpashaintern@gmail.com
+                    </a>
+                    <a href="tel:+917760554350" class="hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l1.3 4.993a1 1 0 01-.23.978l-2.454 2.454a10.999 10.999 0 007.411 7.411l2.454-2.454a1 1 0 01.978-.23l4.993 1.3A1 1 0 0118 17v-2.153a1 1 0 00-.836-.986l-4.993-1.3a1 1 0 00-.978.23l-2.454 2.454a10.999 10.999 0 00-7.411-7.411l2.454-2.454a1 1 0 00.23-.978l-1.3-4.993A1 1 0 013.153 2H3a1 1 0 00-1 1z"/></svg> +91 7760554350
+                    </a>
+                    <a href="https://arshadpasha.tech" target="_blank" class="hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg> arshadpasha.tech
+                    </a>
+                    <a href="https://github.com/arshadpasha" target="_blank" class="hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.169 6.831 9.491.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.7-2.782.602-3.37-1.34-3.37-1.34-.454-1.156-1.11-1.464-1.11-1.464-.907-.619.068-.607.068-.607 1.004.07 1.532 1.03 1.532 1.03.89 1.534 2.336 1.088 2.905.83.091-.645.348-1.088.632-1.338-2.22-.253-4.555-1.111-4.555-4.945 0-1.091.39-1.986 1.03-2.686-.103-.253-.447-1.272.097-2.659 0 0 .84-.269 2.75 1.026.799-.222 1.637-.333 2.475-.337.838.004 1.676.115 2.475.337 1.909-1.295 2.747-1.026 2.747-1.026.545 1.387.201 2.406.098 2.659.64.7 1.028 1.595 1.028 2.686 0 3.843-2.339 4.686-4.562 4.939.359.31.678.92.678 1.854 0 1.338-.013 2.419-.013 2.74.004.266.183.578.688.482C17.135 18.18 20 14.428 20 10.017c0-5.533-4.473-10.017-10-10.017z" clip-rule="evenodd"/></svg> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="section">
+                <h2 class="section-title">SUMMARY</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    A passionate and results-driven Full Stack Web Developer with a robust portfolio of 8+ projects. Proven expertise in building impactful web solutions using modern technologies like ReactJS, Flask, and various database systems. My journey includes valuable internship experience, certifications from Google Cloud and Infosys Springboard, and a strong commitment to continuous learning and open-source collaboration. I am skilled in API integration, cloud platforms, and streamlining development workflows.
+                </p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="section">
+                <h2 class="section-title">SKILLS</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="skill-group">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C/C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Web Technologies & Frameworks</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">ReactJS</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Flask</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Databases & Data Handling</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Cloud & AI/ML</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Vertex AI</span>
+                            <span class="skill-tag">Gemini API</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>DevOps & Version Control</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">GitLab</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Deployment & Hosting</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Netlify</span>
+                            <span class="skill-tag">Render.com</span>
+                            <span class="skill-tag">Railway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="section">
+                <h2 class="section-title">SELECTED PROJECTS</h2>
+                <p class="text-gray-600 mb-4">A complete list of projects can be found on my <a href="https://arshadpasha.tech/a/project" class="text-blue-600 hover:underline font-medium" target="_blank">website</a> and <a href="https://github.com/arshadpasha" class="text-blue-600 hover:underline font-medium" target="_blank">GitHub</a>.</p>
+                
+                <div class="list-item">
+                    <h3 class="project-name">Library Management System</h3>
+                    <p class="project-tech">Flask, MySQL, HTML, CSS, JavaScript</p>
+                    <ul class="description-list">
+                        <li>Developed a full-stack web application for library operations, including user login, book/member CRUD, real-time search, and Excel export.</li>
+                        <li>Implemented secure password hashing and SQL injection prevention to enhance data security.</li>
+                        <li>Deployed the application on Railway with external MySQL database integration.</li>
+                    </ul>
+                </div>
+                
+                <div class="list-item">
+                    <h3 class="project-name">Criminal-Identification-System</h3>
+                    <p class="project-tech">Python, OpenCV, Face Recognition, Tkinter, SQLite</p>
+                    <ul class="description-list">
+                        <li>Built a real-time facial recognition system with SMS alert integration (via Pushover) for automated criminal detection.</li>
+                        <li>Integrated three modules: Registration, Detection, and Live Video Surveillance.</li>
+                        <li>The system triggers a sound notification and sends an instant SMS to authorities upon detecting a match in the SQLite database.</li>
+                    </ul>
+                </div>
+                
+                 <div class="list-item">
+                    <h3 class="project-name">Infosys Hackathon – SmartRecycle Platform</h3>
+                    <p class="project-tech">ReactJS, JSON, Python, MySQL</p>
+                    <ul class="description-list">
+                        <li>Developed a fully functional web platform in a 48-hour hackathon, promoting eco-friendly behavior.</li>
+                        <li>Enabled users to request garbage pickup, earn points, and redeem rewards.</li>
+                        <li>Used structured JSON files for rapid backend development and demo purposes.</li>
+                    </ul>
+                </div>
+
+                <div class="list-item">
+                    <h3 class="project-name">Encrypt, Decrypt, Images Cybersecurity</h3>
+                    <p class="project-tech">Python, JSON, API key</p>
+                    <ul class="description-list">
+                        <li>Created an advanced GUI-based tool using steganography to securely embed and extract encrypted text within images.</li>
+                        <li>Developed during a cybersecurity internship to enhance practical skills in image processing and cryptography.</li>
+                    </ul>
+                </div>
+
+                <div class="list-item">
+                    <h3 class="project-name">ElementMix – Chemical Reaction Simulator</h3>
+                    <p class="project-tech">Python, JSON, API key</p>
+                    <ul class="description-list">
+                        <li>Developed a chemical reaction simulator that accepts reactants and predicts the reaction and output.</li>
+                        <li>Integrated DeepSeek AI via the OpenRouter API to analyze input and return balanced equations and explanations.</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- Internship Section -->
+            <div class="section">
+                <h2 class="section-title">INTERNSHIPS</h2>
+                <div class="list-item">
+                    <h3 class="job-title">Web Development Intern</h3>
+                    <p class="company-name">Nexus Logic Technologies</p>
+                    <p class="dates">March 2025 - May 2025</p>
+                    <ul class="description-list">
+                        <li>Contributed significantly to web development projects, applying a strong understanding of modern web technologies.</li>
+                        <li>Demonstrated swift learning capabilities, quickly integrating new concepts and tools into project workflows.</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <h3 class="job-title">Artificial Intelligence and Data Analytics Intern</h3>
+                    <p class="company-name">AICTE, Shell India Markets Private Limited, Edunet Foundation</p>
+                    <p class="dates">June 2025 - July 2025</p>
+                    <ul class="description-list">
+                        <li>Completed a 4-week virtual internship on AI and Data Analytics with a focus on "Green Skills" under the Skills4Future program.</li>
+                    </ul>
+                </div>
+                <div class="list-item">
+                    <h3 class="job-title">Cyber Security Intern</h3>
+                    <p class="company-name">Edunet Foundation, AICTE, IBM SkillsBuild</p>
+                    <p class="dates">Culminated June 2025</p>
+                    <ul class="description-list">
+                        <li>Completed a 6-week internship in Cyber Security, gaining hands-on experience in secure data handling techniques.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="section">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="list-item">
+                    <h3 class="job-title">Bachelor of Computer Applications (BCA)</h3>
+                    <p class="company-name">Seshadripuram Degree College, University of Mysore</p>
+                    <p class="dates">2023 - 2026</p>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="section">
+                <h2 class="section-title">CERTIFICATIONS</h2>
+                <ul class="description-list">
+                    <li>Google Cloud: Build Multi-Modal GenAI Applications (Vertex AI)</li>
+                    <li>Infosys Springboard: OpenAI GPT-3 for Developers, Introduction to AI, Introduction to Data Science</li>
+                    <li>Microsoft: Foundations of AI (in collaboration with Edunet Foundation and AICTE)</li>
+                    <li>UiPath: RPA Developer Training</li>
+                    <li>Self-Learned: Cybersecurity & Ethical Hacking (Kali Linux)</li>
+                </ul>
+            </div>
+
+            <!-- Awards Section -->
+            <div class="section">
+                <h2 class="section-title">AWARDS & LEADERSHIP</h2>
+                <ul class="description-list">
+                    <li>1st Prize: Website Development Competition at Inter-College Fest (Degree Level)</li>
+                    <li>2nd Prize: Website Development Competition at PU Level</li>
+                    <li>Open-Source Contributor: Social Summer of Code (SSOC)</li>
+                    <li>Leadership Roles: Education Vice-Captain (PU College) and Class Representative (Degree College)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('download-button').addEventListener('click', function() {
+            const element = document.getElementById('resume-content');
+            const options = {
+                margin: [10, 10, 10, 10],
+                filename: 'Arshad_Pasha_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().from(element).set(options).save();
+        });
+    </script>
+
+</body>
+</html>
